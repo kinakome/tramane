@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
 
+#最初に飛ぶページ 
 def index(request):
-    return HttpResponse("初、共同開発！！頑張りましょう！！")
+    return render(request, 'index.html')
